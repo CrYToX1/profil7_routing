@@ -56,7 +56,7 @@ if (isset($_GET['msg'])) {
 <ul>
 <?php foreach ($interests as $key => $i): ?>
     <li>
-        <?php echo ($key + 1) . '. ' . htmlspecialchars($i['name']); ?>
+        <?php echo ($key + 1)?>
         <form method="POST" style="display:inline;">
             <input type="hidden" name="id" value="<?php echo $i['id']; ?>">
             <input type="text" name="name" value="<?php echo htmlspecialchars($i['name']); ?>" required>
