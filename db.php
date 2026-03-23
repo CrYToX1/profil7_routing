@@ -1,5 +1,4 @@
 <?php
-// db.php
 try {
     $pdo = new PDO('sqlite:interests.db');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
